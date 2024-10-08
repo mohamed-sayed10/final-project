@@ -1,0 +1,22 @@
+.info{
+  box-shadow: 0 0.5rem 0.2rem rgba(0, 0, 0, 0.15) !important;
+}
+
+button {
+  background: rgba(219, 68, 68, 1);
+  color: #fff;
+  padding: 16px 48px 16px 48px;
+  border-radius: 4px;
+  margin-right: 9.5%;
+  margin-top: 5%;
+  margin-inline: 9.5%;
+}
+
+button:hover{
+  background: rgb(219, 96, 96);
+  color: #fff;
+}
+
+.form-control{
+  border-radius: 4px;
+}

@@ -1,0 +1,172 @@
+.container {
+  width: 1170px;
+  /* height: 900px; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .product {
+  display: flex;
+  gap: 30px;
+}
+
+.playStation {
+  background: black;
+  position: relative;
+  width: 570px;
+  height: 600px;
+}
+
+
+.playStation img {
+  margin-top: 90px;
+}
+
+.playStation div {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.box2 {
+  display: flex;
+  gap: 30px;
+}
+
+.Women {
+  background: black;
+  width: 570px;
+  height: 284px;
+}
+
+.Women div {
+  padding-top: 140px;
+  padding-left: 20px;
+  width: 255px;
+  height: 122px;
+}
+
+.Speakers {
+  background: black;
+  position: relative;
+  width: 270px;
+  height: 284px;
+}
+
+.Speakers img {
+  margin: 30px 40px;
+}
+
+.Speakers div {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.Perfume {
+  background: black;
+  position: relative;
+  width: 270px;
+  height: 284px;
+}
+
+.Perfume div {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.Perfume img {
+  margin: 30px 40px;
+} */
+
+.container h4 {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-semibold);
+  font-size: 24px;
+  line-height: 24px;
+  color: white;
+}
+
+.container p {
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+}
+
+.container span {
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+      max-width: 400px;
+      height: fit-content;
+      margin-top: 20px;
+  }
+
+}
+
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  width: 943px;
+  margin: 100px auto;
+}
+
+.features div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.features img {
+  background: black;
+  padding: 10px;
+  border-radius: 50%;
+  border: 10px solid rgb(174, 159, 159);
+  text-align: center;
+  margin: 0 auto;
+  width: 40px;
+}
+
+.features div  p {
+  color: #000;
+  font-size: 14px;
+  line-height: 24px;padding: 0;
+  margin: 0;
+
+}
+
+.features div h6 {
+  font-weight: var(--font-weight-semibold);
+  font-size: 20px;
+  line-height: 28px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .features {
+      flex-direction: column;
+      width: 300px;
+      margin: 30px 20px;
+  }
+  .container .product {
+      margin: 0;
+  }
+}

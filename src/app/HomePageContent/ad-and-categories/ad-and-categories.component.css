@@ -1,0 +1,199 @@
+
+
+.slider {
+  /* width: 892px;
+  margin: 0 auto; */
+  /* margin-bottom: 45px; */
+  /* position: absolute; */
+  top: 142px;
+  left: 460px;
+} 
+
+
+.slider .Img {
+  width: 446px;
+  height: 310px;
+  padding-top: 20px;
+}
+
+.slider .img {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 10;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.ad {
+  margin-top: 30px;
+  width: 892px;
+  height: 344px;
+  display: flex;
+  justify-content: space-evenly;
+  background: #000;
+}
+
+
+
+.ad div {
+  padding: 20px 40px;
+}
+
+.ad p {
+  color: #fff;
+}
+
+.ad .name {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.ad .name p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.ad .offer {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-semibold);
+  font-size: 48px;
+  line-height: 60px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+
+.ad .shopNow{
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+  align-items: center;
+  padding: 0;
+  margin-left: 20px;
+}
+.ad .shopNow p{
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 1px solid white;
+}
+.ad .shopNow img {
+  width: 16.5px;
+  height: 14px;
+}
+
+
+@media (max-width: 768px) {
+  .slider {
+      left: 0;
+      width: 390px;
+  }
+  .ad {
+      flex-direction: column;
+      width: 390px;
+      position: static;
+  }
+  .ad>div {
+      padding: 0;
+  }
+  .ad .Img {
+      width: 390px;
+      height: 200px;
+      padding-top: 0;
+  }
+  .ad .offer {
+      font-size: 19px;
+  }
+}
+
+
+
+/* ******************************************************************************************************* */
+
+
+
+.related {
+  width: 20px;
+  height: 40px;
+  background-color: #DB4444;
+}
+
+/* .carousel-item img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+} */
+
+.carousel-control-next,
+.carousel-control-prev {
+  display: none;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 4px transparent solid;
+}
+
+.carousel-indicators .active {
+  background-color: #eb1f1f;
+  border: 4px white solid;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.sub-categories {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.sub-categories ul {
+  list-style: none;
+}
+
+.toggle-checkbox + label{
+  cursor: pointer;
+}
+
+.toggle-checkbox:checked + label + .sub-categories {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+  transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.toggle-checkbox:checked + label .arrow {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.category-section a {
+  color: #000;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.category-section a:hover {
+  color: #DB4444;
+}
+
+.card-body a {
+  color: #000;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.card-body a:hover {
+  color: #DB4444;
+}

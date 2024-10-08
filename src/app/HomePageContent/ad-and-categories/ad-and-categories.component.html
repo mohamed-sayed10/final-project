@@ -1,0 +1,140 @@
+<!-- 
+<section>
+  <div class="container">
+    <div class="slider">
+      <div class="ad">
+        <div>
+          <div class="name">
+            <img src="images/1200px-Apple_gray_logo 1.png" alt="Apple Logo" />
+            <p>iPhone 14 Series</p>
+          </div>
+          <p class="offer">Up to 10% off Voucher</p>
+          <div class="shop-now">
+            <p>Shop Now</p>
+            <img src="images/arrow.png" alt="Shop Icon" />
+          </div>
+        </div>
+        <img class="Img" src="images/7215f42e5883a64157f0aa3a4d1a866a.jpeg" alt="iPhone Ad" loading="lazy" />
+        <img class="img" src="images/icons_arrow-up.png" alt="Scroll Up Arrow" (click)="scrollUp()" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<div class="container">
+
+  <div class="row justify-content-between">
+    <div class="col-lg-2 border-end py-4">
+      <div class="category-section">
+        <div class="category" *ngFor="let category of categories; let i = index">
+          <input type="checkbox" id="toggle{{ i }}" class="toggle-checkbox">
+          <label for="toggle{{ i }}" class="d-flex justify-content-between mb-3">
+            <span><a routerLink="/product/{{ category.id }}">{{ category.name }}</a></span>
+            <span class="arrow">></span>
+          </label>
+          <div class="sub-categories">
+            <ul>
+              <li *ngFor="let subCategory of category.subcategories" class="mb-2">
+                <a routerLink="/product/{{ subCategory.id }}">{{ subCategory.name }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 ps-5 py-4">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slider">
+              <div class="ad">
+                <div>
+                  <div class="name">
+                    <img src="images/1200px-Apple_gray_logo 1.png" alt="Apple Logo" />
+                    <p>iPhone 14 Series</p>
+                  </div>
+                  <p class="offer">Up to 10% off Voucher</p>
+                  <div class="shop-now">
+                    <p>Shop Now</p>
+                    <img src="images/arrow.png" alt="Shop Icon" />
+                  </div>
+                </div>
+                <img class="Img" src="images/7215f42e5883a64157f0aa3a4d1a866a.jpeg" alt="iPhone Ad" loading="lazy" />
+                <img class="img" src="images/icons_arrow-up.png" alt="Scroll Up Arrow" (click)="scrollUp()" loading="lazy" />
+              </div>
+            </div>
+          </div>
+       
+         
+          
+          <div class="carousel-item active">
+            <div class="slider">
+              <div class="ad">
+                <div>
+                  <div class="name">
+                    <img src="images/1200px-Apple_gray_logo 1.png" alt="Apple Logo" />
+                    <p>iPhone 14 Series</p>
+                  </div>
+                  <p class="offer">Up to 20% off Voucher</p>
+                  <div class="shop-now">
+                    <p>Shop Now</p>
+                    <img src="images/arrow.png" alt="Shop Icon" />
+                  </div>
+                </div>
+                <img class="Img" src="images/7215f42e5883a64157f0aa3a4d1a866a.jpeg" alt="iPhone Ad" loading="lazy" />
+                <img class="img" src="images/icons_arrow-up.png" alt="Scroll Up Arrow" (click)="scrollUp()" loading="lazy" />
+              </div>
+            </div>
+          </div>
+       
+         
+          
+          <div class="carousel-item active">
+            <div class="slider">
+              <div class="ad">
+                <div>
+                  <div class="name">
+                    <img src="images/1200px-Apple_gray_logo 1.png" alt="Apple Logo" />
+                    <p>iPhone 14 Series</p>
+                  </div>
+                  <p class="offer">Up to 30% off Voucher</p>
+                  <div class="shop-now">
+                    <p>Shop Now</p>
+                    <img src="images/arrow.png" alt="Shop Icon" />
+                  </div>
+                </div>
+                <img class="Img" src="images/7215f42e5883a64157f0aa3a4d1a866a.jpeg" alt="iPhone Ad" loading="lazy" />
+                <img class="img" src="images/icons_arrow-up.png" alt="Scroll Up Arrow" (click)="scrollUp()" loading="lazy" />
+              </div>
+            </div>
+          </div>
+       
+         
+          
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
